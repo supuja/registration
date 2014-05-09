@@ -20,7 +20,7 @@ $query11=mysql_query("select rno from sign_in where mail='$mail'");
 $n11=mysql_result($query11,0,'rno');
 session_start();
 $_SESSION["n1"]=$n11;
-header( 'Location: mainpage.php' ) ; 
+header( 'Location: final.php' ) ; 
 }
 else if($n==0){echo "Account not activated,Kindly head to your ";} //added
 
