@@ -15,7 +15,7 @@ if( $diff>30 && $n9==0 )
 $q=mysql_query("DELETE FROM sign_in WHERE mail='".$m1."'");
 if($q){
 
-header( 'Location: index.php' ) ; 
+header( 'Location: signup.php' ) ; 
 }
 
 }
@@ -63,7 +63,7 @@ mysql_close($con);
 }
 
 else {
-header( 'Location: index.php' ) ;
+header( 'Location: signup.php' ) ;
 }
 
 ?>   
