@@ -204,7 +204,7 @@ $sql1="INSERT INTO sign_in(name,dob,mail,mobile,password,education,institution,r
 mysql_query($sql1,$con);
 
 mysql_close($con);
-header( 'Location: thankyou.html' ) ; 
+header( 'Location: aftersignup.html' ) ; 
 
 $mail = $smtp->send($to, $headers, $body);
 
